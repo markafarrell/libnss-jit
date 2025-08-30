@@ -1,0 +1,13 @@
+[package]
+name = "libnss-jit"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "nss_jit"
+crate-type = [ "cdylib" ]
+
+[dependencies]
+libc = "0.2"
+libnss = "0.8.0"
+rusqlite = { version = "0.37.0", features = ["bundled"] }
